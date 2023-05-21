@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(249, 249, 251);
+  font-family: sans-serif;
+}
+form {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+section {
+  width: 49%;
+  padding: 24px;
+  margin-bottom: 2%;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+section h2 {
+  width: 100%;
+  color: #000;
+}
+section input,
+section textarea,
+section select {
+  width: 49%;
+  padding: 10px 8px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid rgb(220, 220, 220);
+  background-color: #fff;
+}
+#tel,
+#email,
+#jobdescription,
+#city,
+#state,
+#address,
+#data,
+#person {
+  width: 100%;
+  resize: none;
+}
+
+#time,
+#data,
+#person,
+#select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 1em; /* Add some padding to make room for custom arrow */
+  background-image: url("../images/icons/alarm.png"); /* Set a custom arrow icon */
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  cursor: pointer;
+}
+#data {
+  background-image: url("../images/icons/date.png"); /* Set a custom arrow icon */
+  background-position: 98% center;
+}
+#person,
+#select {
+  background-image: url("../images/icons/chevron.png"); /* Set a custom arrow icon */
+  background-position: 98% center;
+}
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+button {
+  cursor: pointer;
+  padding: 10px 40px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid rgb(220, 220, 220);
+  background-color: #fff;
+}
+@media screen and (max-width: 768px) {
+  section {
+    width: 100%;
+  }
+}
